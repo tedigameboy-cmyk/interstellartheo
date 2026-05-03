@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+body{
+text-align:center;
+min-height:100vh;
+margin:0;
+background:linear-gradient(to bottom, #5F8D7B, #2B3A36);
+}
+h1 {
+font-size:55px !important;
+color:#8fd694;
+font-family:Orbitron;
+text-decoration:underline;
+}
+nav a {
+font-size:22px;
+margin:10px;
+text-decoration:underline;
+font-weight:bold;
+color:#b3b5ba;
+}
+label {
+margin:15px;
+display:block;
+}
+form {
+text-align:left !important;
+background-color:#8fd694;
+max-width:550px;
+margin:0 auto;
+margin-top:30px;
+padding:20px;
+border: 6px solid #32CD32;
+border-radius:30px;
+font-weight:bold;
+}
+
+input, textarea, select {
+padding: 10px;
+border-radius: 8px;
+border: none;
+font-family: 'Inter', sans-serif;
+}
+input[type="text"],
+textarea,
+select {
+  width: 96%;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Your Contacts</h1>
+
+<nav style = "text-align:center">
+ <a href="index.html">Beginning</a>
+ <a href="information.html">Information</a>
+ <a href="gallery.html">Gallery</a>
+ <a href="contacti.html">Contacts</a>
+</nav>
+
+<form>
+<label for="ime">Name:</label>
+ <input type="text" id="ime" name="ime" required>
+<label for="familiq">Last name:</label>
+ <input type="text" id="familiq" name="familiq" required>
+<label for="komentar">Comment:</label>
+<textarea id="komentar" name="komentar" rows="4" required></textarea>
+
+<label>Gender:</label>
+<div class="radio-group">
+ <input type="radio" id="male" name="gender" value="Male" required>
+<label for="male" style="display:inline;">Male</label>
+ <input type="radio" id="female" name="gender" value="Female" required>
+<label for="female" style="display:inline;">Female</label>          
+</div>
+
+<label for="age">Age group:</label>
+  <select id="age" name="age" required>
+   <option value="Under 18">Under 18</option>
+   <option value="Between 18-25">Between 18-25</option>
+   <option value="Between 26-35">Between 26-35</option>
+   <option value="Between 36-50">Between 36-50</option>
+   <option value="Over 50">Over 50</option>
+  </select>
+
+ <input type="submit" value="Send">
+</form>
+
+</body>
+</html>
